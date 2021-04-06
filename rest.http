@@ -1,0 +1,32 @@
+### Create a emoloyee
+POST http://localhost:8080/rest/employees
+Accept: application/json
+Content-Type: application/json
+
+{
+  "empNo":"E05",
+  "empName":"Martin",
+  "position":"Salesman"
+}
+
+### Get a employee
+GET http://localhost:8080/rest/employees/E01
+Accept: application/xml
+
+### Get all emoloyees
+GET http://localhost:8080/rest/employees
+Accept: application/json
+
+### Update a emoloyee
+PUT http://localhost:8080/rest/employees
+Accept: application/json
+Content-Type: application/json
+
+{
+  "empNo":"E01",
+  "empName":"Martin",
+  "position":"Salesman"
+}
+
+### Create a emoloyee
+DELETE http://localhost:8080/rest/employees/E05
